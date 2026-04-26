@@ -1,5 +1,5 @@
 import '../models/characters.dart';
-import '../models/quote.dart';
+
 import '../web_services/characters_web_services.dart';
 
 class CharactersRepository {
