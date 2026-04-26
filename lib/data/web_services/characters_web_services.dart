@@ -15,11 +15,22 @@ class CharactersWebServices {
     dio = Dio(options);
   }
 
+  // Future<List<dynamic>> getAllCharacters() async {
+  //   try {
+  //     Response response = await dio.get('characters');
+  //     print(response.data.toString());
+  //     return response.data;
+  //   } catch (e) {
+  //     print(e.toString());
+  //     return [];
+  //   }
+  // }
+
   Future<List<dynamic>> getAllCharacters() async {
     try {
-      Response response = await dio.get('characters');
-      print(response.data.toString());
-      return response.data;
+      Response response = await dio.get('character');
+
+      return response.data['results']; // 👈 هنا المشكلة كانت
     } catch (e) {
       print(e.toString());
       return [];
