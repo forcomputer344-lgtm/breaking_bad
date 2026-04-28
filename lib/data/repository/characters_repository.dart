@@ -1,4 +1,4 @@
-import 'package:breakingbloc/data/models/quote.dart';
+import '../models/quote.dart';
 
 import '../models/characters.dart';
 

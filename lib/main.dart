@@ -1,5 +1,6 @@
-import 'package:breakingbloc/app_router.dart';
 import 'package:flutter/material.dart';
+
+import 'app_router.dart';
 
 void main() {
   runApp(BreakingBadApp(appRouter: AppRouter()));

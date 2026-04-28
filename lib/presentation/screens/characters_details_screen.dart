@@ -1,9 +1,9 @@
 import 'dart:math';
 
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:breakingbloc/business_logic/cubit/characters_cubit.dart';
-import 'package:breakingbloc/constants/my_colors.dart';
-import 'package:breakingbloc/data/models/characters.dart';
+import '../../business_logic/cubit/characters_cubit.dart';
+import '../../constants/my_colors.dart';
+import '../../data/models/characters.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
