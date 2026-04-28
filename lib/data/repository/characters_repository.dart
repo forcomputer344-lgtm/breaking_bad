@@ -1,3 +1,5 @@
+import 'package:breakingbloc/data/models/quote.dart';
+
 import '../models/characters.dart';
 
 import '../web_services/characters_web_services.dart';
@@ -13,4 +15,12 @@ class CharactersRepository {
         .map((character) => Character.fromJson(character))
         .toList();
   }
+
+    Future<List<Quote>> getCharacterQuotes(String charName) async {
+    final quotes = await charactersWebServices.getCharacterQuotes(charName);
+    return quotes.map((charQuotes) => Quote.fromJson(charQuotes)).toList();
+  }
+
+    
+  
 }

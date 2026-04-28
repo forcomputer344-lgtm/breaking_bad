@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:breakingbloc/data/models/quote.dart';
 import '../../data/models/characters.dart';
 import '../../data/repository/characters_repository.dart';
 import 'package:flutter/material.dart';
@@ -20,9 +21,9 @@ class CharactersCubit extends Cubit<CharactersState> {
     return characters;
   }
 
-  // void getQuotes(String charName) {
-  //   charactersRepository.getCharacterQuotes(charName).then((quotes) {
-  //     emit(QuotesLoaded(quotes));
-  //   });
-  // }
+  void getQuotes(String charName) {
+    charactersRepository.getCharacterQuotes(charName).then((quotes) {
+      emit(QuotesLoaded(quotes));
+    });
+  }
 }
