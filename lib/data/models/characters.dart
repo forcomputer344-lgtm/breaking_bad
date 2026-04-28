@@ -30,6 +30,10 @@ class Character {
   late String image;
   late String statusIfDeadOrAlive;
   late String species;
+  late String gender;
+  late String type;
+  late Map<String,dynamic> origin;
+  late Map<String,dynamic> location;
   late List<dynamic> episodes;
 
   Character.fromJson(Map<String, dynamic> json) {
@@ -38,6 +42,10 @@ class Character {
     image = json["image"];
     statusIfDeadOrAlive = json["status"];
     species = json["species"];
+    gender = json["gender"];
+    type = json["type"];
+    origin = json["origin"];
+    location = json["location"];
     episodes = json["episode"];
   }
 }
