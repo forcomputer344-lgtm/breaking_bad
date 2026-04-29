@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:breakingbloc/data/models/quote.dart';
+import '../../data/models/quote.dart';
 import '../../data/models/characters.dart';
 import '../../data/repository/characters_repository.dart';
 import 'package:flutter/material.dart';
